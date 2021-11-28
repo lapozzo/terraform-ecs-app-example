@@ -1,0 +1,15 @@
+aws_region         = "us-east-2"
+
+# pre-created subnets
+vpc_id             = "vpc-0499789e0099473a3"
+public_subnets     = ["subnet-00ec3e2519ab5f2f9", "subnet-08c1b9d692d2ee600"]
+private_subnets    = ["subnet-08650f171177e18eb", "subnet-095ecfd130900c6fa"]
+
+# used for tags
+app_name           = "ecs-example-app"
+app_environment    = "dev"
+
+# enable components
+ecr_enabled        = true
+ecs_enabled        = true
+lb_enabled         = true
